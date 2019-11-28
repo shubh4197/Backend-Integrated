@@ -1,0 +1,72 @@
+<div>
+    <div class="jumbotron jumbotron-fluid bg-dark">
+
+            <div class="jumbotron-background">
+              <img src="https://forepoint.co.uk/wp-content/uploads/2018/01/DXC-cover.jpg" class="blur ">
+            </div>
+<div class="container" style="margin-top: -40px;">
+  <br><br>
+    <nav class="navbar navbar-expand-lg navbar-light;" style="background-color: black;color: white;border-radius: 10px;margin-top: -40px;text-align: center;">
+        <a class="navbar-brand" href="#" style="padding: 30 10 10 10;color: white;">
+                <img style="margin-left: 13px;" src="https://zenprospect-production.s3.amazonaws.com/uploads/pictures/5dcdbf2b48ea81000114cf50/picture" width="80" height="40" class="d-inline-block align-top" alt="">
+                <h6 style="margin-right: 20px;">CROWDSOURCE</h6>
+              </a>
+<h3 style="text-align: center;color: yellow;padding-left: 300px;">Available Posts</h3>
+
+<a class="navbar-brand" routerLink="/userAppliedPost/{{id}}" style="padding: 30 10 10 10;color: white;">
+    <img style="margin-left: 300px;" src="https://previews.123rf.com/images/tuktukdesign/tuktukdesign1805/tuktukdesign180500108/101624867-male-icon-vector-user-person-profile-avatar-in-flat-color-glyph-pictogram-illustration.jpg" width="50" height="40" class="d-inline-block align-top" alt="">
+    <h6 style="margin-left: 300px;">Profile</h6>
+  </a>
+
+</nav>
+<br>
+        <div *ngFor="let zip of posts" class="card border-light text-white bg-dark mb-3"
+            >
+
+              <div class="card-body" style="background-color: black;color: white;">
+                <h5 class="card-title">{{zip.projectname}}</h5>
+                <p class="card-text">{{zip.description}}</p>
+                <button class="btn"  (click)="apply(zip.id)" style="background-color: yellow; color: black;" data-toggle="modal" data-target="#exampleModal"><strong> Apply </strong></button>
+              </div>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <footer class="page-footer font-small blue">
+
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3" style="background-color: black;color: white;border-radius: 10px;">
+                  <a href="https://www.dxc.technology/about_us" target="_blank" style="color: white;">About Us </a><br>
+                  <a href="https://www.dxc.technology/contact_us" target="_blank" style="color: white;">Contact Us </a>
+                </div>
+                <!-- Copyright -->
+
+              </footer>
+
+
+          </div><!-- Footer -->
+          </div>
+      <!-- Footer -->
+<br>
+
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content" style="background-color: black;color: white;border-color: white;">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel" style="color: white;">Post</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Successfully Applied</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn" style="background-color: yellow;color: black;" data-dismiss="modal"><strong> Ok</strong></button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+
+            </div>

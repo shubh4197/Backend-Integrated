@@ -1,0 +1,95 @@
+<div>
+        <div class="jumbotron jumbotron-fluid bg-dark">
+          
+                <div class="jumbotron-background">
+                  <img src="https://forepoint.co.uk/wp-content/uploads/2018/01/DXC-cover.jpg" class="blur ">
+                </div>
+    <div class="container" style="margin-top: -40px;">
+      <br><br>
+        <nav class="navbar navbar-expand-lg navbar-light;" style="background-color: black;color: white;border-radius: 10px;margin-top: -40px;text-align: center;">
+            <a class="navbar-brand" routerLink="/userHome" style="padding: 30 10 10 10;color: white;">
+                    <img style="margin-left: 13px;" src="https://zenprospect-production.s3.amazonaws.com/uploads/pictures/5dcdbf2b48ea81000114cf50/picture" width="80" height="40" class="d-inline-block align-top" alt="">
+                    <h6 style="margin-right: 20px;">CROWDSOURCE</h6>
+                  </a>
+    <h3 style="text-align: center;color: yellow;padding-left: 300px;">User Profile </h3>
+    
+    <button type="submit" class="btn btn" style="background-color: yellow;color: black;margin-left: 300px;" routerLink=""><strong>Log out</strong></button>
+    
+    </nav>
+    <br>
+    <div class="container" style="color: white;">
+            <div class="row">
+                <div class="col-5" style="background-color: black;">
+                    <h5 style="text-align: center;color: yellow;padding-top: 20px;">Profile</h5>
+
+                    <div class="row">
+
+                            <div class="col-4" style="text-align: right;">
+                          
+                          <p class="card-text">Id: </p>
+                          <p class="card-text">Name: </p>
+                          <p class="card-text">Email: </p>
+                          <p class="card-text">Age: </p>
+                          <p class="card-text">Skills: </p>
+                          <p class="card-text">DXC/Freelancer: </p>
+                          <br>
+                          </div>
+
+                          <div class="col-8" style="text-align: left;">
+                          
+                            <p class="card-text">{{candidate.id}} </p>
+                            <p class="card-text">{{candidate.name}} </p>
+                            <p class="card-text">{{candidate.username}} </p>
+                            <p class="card-text">{{candidate.age}} </p>
+                            <p class="card-text">{{skills}} </p>
+                            <p class="card-text">{{dxc}} </p>
+                            <br>
+                            </div>
+                          </div>
+
+                          
+
+                </div>
+                <div class="col-5" style="background-color: black;margin-left: 170px;">
+                        <h5 style="text-align: center;color: yellow;padding-top: 20px;">Applied Posts</h5>
+                        <br>
+                        <div class="card border-light text-white bg-dark mb-3"
+            >
+              
+             
+            <br>
+            <div *ngFor="let zip of candidate.appliedPosts" class="card border-light text-white bg-dark mb-3"
+            >
+              
+              <div class="card-body" style="background-color: black;color: white;">
+                <h5 class="card-title">{{zip.projectname}}</h5>
+                <p class="card-text">{{zip.description}}</p>
+              </div>
+            </div>
+
+                </div>
+            </div>
+        </div>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <footer class="page-footer font-small blue">
+    
+                    <!-- Copyright -->
+                    <div class="footer-copyright text-center py-3" style="background-color: black;color: white;border-radius: 10px;">
+                      <a href="https://www.dxc.technology/about_us" target="_blank" style="color: white;">About Us </a><br>
+                      <a href="https://www.dxc.technology/contact_us" target="_blank" style="color: white;">Contact Us </a>
+                    </div>
+                    <!-- Copyright -->
+                  
+                  </footer>
+              
+                  
+              </div><!-- Footer -->
+              </div>
+          <!-- Footer -->
+    <br>
+    
+    
+              
+                  
+             
+                </div>
